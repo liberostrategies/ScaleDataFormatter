@@ -1,0 +1,299 @@
+Scale201806
+
+Pinky
+Time:07:17:27, Fri,6/ 1/2018
+Weight:142.2lb
+Body Water:41.9%
+Body Fat:41.4%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1181.0 kcal
+Muscle Mass:78.6lb
+
+Pinky
+Time:07:19:05, Sat,6/ 2/2018
+Weight:144.2lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.5
+Visceral Fat:8.0
+BMR:1190.0 kcal
+Muscle Mass:79.6lb
+
+Pinky
+Time:10:23:41, Sun,6/ 3/2018
+Weight:146.4lb
+Body Water:42.1%
+Body Fat:41.0%
+Bone:5.2lb
+BMI:26.9
+Visceral Fat:8.0
+BMR:1201.0 kcal
+Muscle Mass:81.2lb
+
+Pinky
+Time:07:02:58, Mon,6/ 4/2018
+Weight:144.8lb
+Body Water:42.0%
+Body Fat:41.2%
+Bone:5.2lb
+BMI:26.7
+Visceral Fat:8.0
+BMR:1194.0 kcal
+Muscle Mass:80.0lb
+
+Pinky
+Time:07:09:06, Tues,6/ 5/2018
+Weight:145.0lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.7
+Visceral Fat:8.0
+BMR:1195.0 kcal
+Muscle Mass:80.0lb
+
+Pinky
+Time:07:09:14, Wed,6/ 6/2018
+Weight:143.2lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.4
+Visceral Fat:8.0
+BMR:1186.0 kcal
+Muscle Mass:79.2lb
+
+Pinky
+Time:07:15:42, Thur,6/ 7/2018
+Weight:142.6lb
+Body Water:42.0%
+Body Fat:41.2%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1183.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:04:52:24, Fri,6/ 8/2018
+Weight:144.2lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.5
+Visceral Fat:8.0
+BMR:1190.0 kcal
+Muscle Mass:79.8lb
+
+Pinky
+Time:08:05:26, Sun,6/ 10/2018
+Weight:144.8lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.7
+Visceral Fat:8.0
+BMR:1194.0 kcal
+Muscle Mass:80.2lb
+
+Pinky
+Time:06:34:22, Mon,6/ 11/2018
+Weight:143.6lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.4
+Visceral Fat:8.0
+BMR:1187.0 kcal
+Muscle Mass:79.4lb
+
+Pinky
+Time:06:12:40, Tues,6/ 12/2018
+Weight:143.8lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.5
+Visceral Fat:8.0
+BMR:1188.0 kcal
+Muscle Mass:79.4lb
+
+Pinky
+Time:06:59:42, Wed,6/ 13/2018
+Weight:142.8lb
+Body Water:41.8%
+Body Fat:41.4%
+Bone:5.2lb
+BMI:26.3
+Visceral Fat:8.0
+BMR:1184.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:06:37:53, Thur,6/ 14/2018
+Weight:142.0lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.1
+Visceral Fat:8.0
+BMR:1180.0 kcal
+Muscle Mass:78.4lb
+
+Pinky
+Time:06:59:33, Fri,6/ 15/2018
+Weight:142.4lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1182.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:06:15:19, Sat,6/ 16/2018
+Weight:141.6lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1178.0 kcal
+Muscle Mass:78.6lb
+
+Pinky
+Time:07:46:32, Sun,6/ 17/2018
+Weight:141.6lb
+Body Water:42.2%
+Body Fat:40.9%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1178.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:06:36:00, Mon,6/ 18/2018
+Weight:141.0lb
+Body Water:42.4%
+Body Fat:40.6%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1176.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:06:37:37, Tues,6/ 19/2018
+Weight:142.8lb
+Body Water:42.2%
+Body Fat:40.8%
+Bone:5.2lb
+BMI:26.3
+Visceral Fat:8.0
+BMR:1184.0 kcal
+Muscle Mass:79.4lb
+
+Pinky
+Time:06:42:55, Wed,6/ 20/2018
+Weight:142.4lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1182.0 kcal
+Muscle Mass:79.0lb
+
+Pinky
+Time:06:46:19, Thur,6/ 21/2018
+Weight:141.4lb
+Body Water:42.3%
+Body Fat:40.8%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1177.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:07:01:18, Fri,6/ 22/2018
+Weight:142.0lb
+Body Water:42.2%
+Body Fat:40.9%
+Bone:5.2lb
+BMI:26.1
+Visceral Fat:8.0
+BMR:1180.0 kcal
+Muscle Mass:79.0lb
+
+Pinky
+Time:07:39:49, Sat,6/ 23/2018
+Weight:142.0lb
+Body Water:42.1%
+Body Fat:41.0%
+Bone:5.2lb
+BMI:26.1
+Visceral Fat:8.0
+BMR:1180.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:06:50:47, Mon,6/ 25/2018
+Weight:142.4lb
+Body Water:41.9%
+Body Fat:41.3%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1182.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:07:05:01, Tues,6/ 26/2018
+Weight:142.4lb
+Body Water:42.1%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.2
+Visceral Fat:8.0
+BMR:1182.0 kcal
+Muscle Mass:79.0lb
+
+Pinky
+Time:07:26:47, Wed,6/ 27/2018
+Weight:141.0lb
+Body Water:42.0%
+Body Fat:41.1%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1176.0 kcal
+Muscle Mass:78.0lb
+
+Pinky
+Time:06:39:02, Thur,6/ 28/2018
+Weight:141.6lb
+Body Water:42.1%
+Body Fat:41.0%
+Bone:5.2lb
+BMI:26.0
+Visceral Fat:8.0
+BMR:1178.0 kcal
+Muscle Mass:78.6lb
+
+Pinky
+Time:09:21:47, Sat,6/ 30/2018
+Weight:140.6lb
+Body Water:42.0%
+Body Fat:41.2%
+Bone:5.2lb
+BMI:25.9
+Visceral Fat:8.0
+BMR:1174.0 kcal
+Muscle Mass:77.6lb
+

@@ -1,0 +1,332 @@
+Scale202006
+
+Pinky
+Time:07:38:45, Mon,6/ 1/2020
+Weight:129.2lb
+Body Water:46.2%
+Body Fat:35.3%
+Bone:5.0lb
+BMI:23.8
+Visceral Fat:6.0
+BMR:1121.0 kcal
+Muscle Mass:78.8lb
+
+Pinky
+Time:07:47:37, Tues,6/ 2/2020
+Weight:127.4lb
+Body Water:46.2%
+Body Fat:35.3%
+Bone:5.0lb
+BMI:23.4
+Visceral Fat:6.0
+BMR:1113.0 kcal
+Muscle Mass:77.6lb
+
+Pinky
+Time:07:24:58, Wed,6/ 3/2020
+Weight:126.2lb
+Body Water:46.3%
+Body Fat:35.2%
+Bone:4.6lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1107.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:07:35:26, Thur,6/ 4/2020
+Weight:125.6lb
+Body Water:46.4%
+Body Fat:35.1%
+Bone:4.6lb
+BMI:23.1
+Visceral Fat:6.0
+BMR:1105.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:07:33:01, Fri,6/ 5/2020
+Weight:126.8lb
+Body Water:46.1%
+Body Fat:35.5%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1110.0 kcal
+Muscle Mass:77.2lb
+
+Pinky
+Time:07:54:34, Sat,6/ 6/2020
+Weight:126.6lb
+Body Water:46.3%
+Body Fat:35.2%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1109.0 kcal
+Muscle Mass:77.4lb
+
+Pinky
+Time:07:21:59, Sun,6/ 7/2020
+Weight:126.8lb
+Body Water:46.2%
+Body Fat:35.2%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1110.0 kcal
+Muscle Mass:77.4lb
+
+Pinky
+Time:07:41:53, Mon,6/ 8/2020
+Weight:128.6lb
+Body Water:46.0%
+Body Fat:35.5%
+Bone:5.0lb
+BMI:23.7
+Visceral Fat:6.0
+BMR:1118.0 kcal
+Muscle Mass:78.0lb
+
+Pinky
+Time:06:42:53, Tues,6/ 9/2020
+Weight:127.8lb
+Body Water:46.2%
+Body Fat:35.2%
+Bone:5.0lb
+BMI:23.5
+Visceral Fat:6.0
+BMR:1115.0 kcal
+Muscle Mass:78.0lb
+
+Pinky
+Time:06:45:37, Wed,6/ 10/2020
+Weight:127.0lb
+Body Water:46.3%
+Body Fat:35.1%
+Bone:5.0lb
+BMI:23.4
+Visceral Fat:6.0
+BMR:1111.0 kcal
+Muscle Mass:77.6lb
+
+Pinky
+Time:06:07:10, Thur,6/ 11/2020
+Weight:126.8lb
+Body Water:46.2%
+Body Fat:35.3%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1110.0 kcal
+Muscle Mass:77.2lb
+
+Pinky
+Time:06:51:54, Fri,6/ 12/2020
+Weight:126.8lb
+Body Water:46.6%
+Body Fat:34.8%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1110.0 kcal
+Muscle Mass:77.8lb
+
+Pinky
+Time:07:53:21, Sat,6/ 13/2020
+Weight:125.2lb
+Body Water:46.4%
+Body Fat:35.0%
+Bone:4.6lb
+BMI:23.0
+Visceral Fat:6.0
+BMR:1103.0 kcal
+Muscle Mass:76.8lb
+
+Pinky
+Time:11:07:26, Sun,6/ 14/2020
+Weight:126.4lb
+Body Water:46.0%
+Body Fat:35.5%
+Bone:4.6lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1108.0 kcal
+Muscle Mass:76.8lb
+
+Pinky
+Time:07:34:29, Mon,6/ 15/2020
+Weight:126.8lb
+Body Water:46.2%
+Body Fat:35.4%
+Bone:5.0lb
+BMI:23.3
+Visceral Fat:6.0
+BMR:1110.0 kcal
+Muscle Mass:77.2lb
+
+Pinky
+Time:07:18:48, Tues,6/ 16/2020
+Weight:125.8lb
+Body Water:46.4%
+Body Fat:35.1%
+Bone:4.6lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1106.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:06:25:36, Wed,6/ 17/2020
+Weight:127.6lb
+Body Water:46.2%
+Body Fat:35.4%
+Bone:5.0lb
+BMI:23.5
+Visceral Fat:6.0
+BMR:1114.0 kcal
+Muscle Mass:77.8lb
+
+Pinky
+Time:07:50:13, Thur,6/ 18/2020
+Weight:128.4lb
+Body Water:46.0%
+Body Fat:35.5%
+Bone:5.0lb
+BMI:23.6
+Visceral Fat:6.0
+BMR:1117.0 kcal
+Muscle Mass:78.0lb
+
+Pinky
+Time:07:24:52, Fri,6/ 19/2020
+Weight:126.4lb
+Body Water:46.2%
+Body Fat:35.3%
+Bone:5.0lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1108.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:08:18:20, Sat,6/ 20/2020
+Weight:125.4lb
+Body Water:46.2%
+Body Fat:35.3%
+Bone:4.6lb
+BMI:23.1
+Visceral Fat:6.0
+BMR:1104.0 kcal
+Muscle Mass:76.6lb
+
+Pinky
+Time:09:51:02, Sun,6/ 21/2020
+Weight:124.8lb
+Body Water:46.3%
+Body Fat:35.1%
+Bone:4.6lb
+BMI:23.0
+Visceral Fat:6.0
+BMR:1101.0 kcal
+Muscle Mass:76.4lb
+
+Pinky
+Time:08:04:23, Mon,6/ 22/2020
+Weight:125.4lb
+Body Water:46.5%
+Body Fat:34.9%
+Bone:4.6lb
+BMI:23.1
+Visceral Fat:6.0
+BMR:1104.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:07:00:40, Tues,6/ 23/2020
+Weight:125.2lb
+Body Water:46.5%
+Body Fat:34.8%
+Bone:4.6lb
+BMI:23.0
+Visceral Fat:6.0
+BMR:1103.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:06:54:14, Wed,6/ 24/2020
+Weight:125.4lb
+Body Water:46.4%
+Body Fat:35.1%
+Bone:4.6lb
+BMI:23.1
+Visceral Fat:6.0
+BMR:1104.0 kcal
+Muscle Mass:76.8lb
+
+Pinky
+Time:05:19:53, Thur,6/ 25/2020
+Weight:126.4lb
+Body Water:46.4%
+Body Fat:35.1%
+Bone:5.0lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1108.0 kcal
+Muscle Mass:77.4lb
+
+Pinky
+Time:06:37:40, Fri,6/ 26/2020
+Weight:126.4lb
+Body Water:46.6%
+Body Fat:34.7%
+Bone:5.0lb
+BMI:23.2
+Visceral Fat:6.0
+BMR:1108.0 kcal
+Muscle Mass:77.6lb
+
+Pinky
+Time:06:00:38, Sat,6/ 27/2020
+Weight:125.6lb
+Body Water:46.4%
+Body Fat:35.0%
+Bone:4.6lb
+BMI:23.1
+Visceral Fat:6.0
+BMR:1105.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:06:19:08, Sun,6/ 28/2020
+Weight:125.0lb
+Body Water:46.6%
+Body Fat:34.7%
+Bone:4.6lb
+BMI:23.0
+Visceral Fat:6.0
+BMR:1102.0 kcal
+Muscle Mass:77.0lb
+
+Pinky
+Time:07:04:06, Mon,6/ 29/2020
+Weight:123.6lb
+Body Water:46.6%
+Body Fat:34.7%
+Bone:4.6lb
+BMI:22.8
+Visceral Fat:6.0
+BMR:1096.0 kcal
+Muscle Mass:76.2lb
+
+Pinky
+Time:06:27:40, Tues,6/ 30/2020
+Weight:122.6lb
+Body Water:46.9%
+Body Fat:34.4%
+Bone:4.6lb
+BMI:22.6
+Visceral Fat:5.0
+BMR:1090.0 kcal
+Muscle Mass:75.8lb
+
