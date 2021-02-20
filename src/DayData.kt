@@ -12,6 +12,11 @@ class DayData (
     private var muscleMass: String
     ) {
 
+    companion object {
+        fun headerToCsv() =
+            // TODO: Populate "Metabolic Age" column?
+            "Time of Measurement,Weight(lb),BMI,Body Fat(%),Body Type,Visceral Fat,Body Water(%),Muscle Mass(lb),Bone Mass(lb),BMR(kcal),Metabolic Age\n"
+    }
     init {
         // TODO: Does Kotlin pass by reference?
         formatTimeStamp()
@@ -42,9 +47,6 @@ class DayData (
             "$weight,$bodyWater,$bodyFat,$bone,$bmi," +
             "Fit," + // Manually add Body Type to match Arboleaf data.
             "$visceralFat,$bmr,$muscleMass\n"
-
-    fun headerToCsv() =
-        "Time of Measurement,Weight(lb),BMI,Body Fat(%),Body Type,Visceral Fat,Body Water(%),Muscle Mass(lb),Bone Mass(lb),BMR(kcal),Metabolic Age\n"
 
     // Format each measurement.
     /**
