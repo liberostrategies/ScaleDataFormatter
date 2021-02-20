@@ -1,6 +1,10 @@
 import java.io.File
 import java.io.FileWriter
 
+const val OUTFILE_DATA_FILENAME = "datafile.csv"
+const val DATE_START = 201801
+const val DATE_END = 201802 // Inclusive. //202012
+
 const val SIZE_OLD_DATA_MEASUREMENTS = 9
 const val IDX_TIMESTAMP = 0
 const val IDX_WEIGHT = 1
@@ -14,28 +18,58 @@ const val IDX_MUSCLE_MASS = 8
 
 fun main(args: Array<String>) {
 
-    val file = "data/Scale201801.txt"
-    println("Reading file")
-    var linesList = File(file).readLines()
+    // Read input data files from Scale201801.txt through Scale202012.txt.
+    var dateCurr = -1
+    var filename = "data/ScaleTBD.txt"  //"data/Scale201801.txt"
+//    println("Reading file $file")
 
-    // Remove first line, which contains the file name.
-    linesList = linesList.drop(1)
+    var fileWriter = FileWriter(OUTFILE_DATA_FILENAME)
+    fileWriter.write(DayData.headerToCsv())
 
-    // Remove user name.
-    val userName = "Pinky"
-    linesList = linesList.filterNot { it == userName }
+    while ((dateCurr != 0) && (dateCurr < DATE_END)) {
+        // Keep reading input data files.
+        dateCurr = nextDataFile(dateCurr)
+        filename = "data/Scale$dateCurr.txt"
 
-    // Remove empty lines.
-    linesList = linesList.filterNot { it.isEmpty() }
+        println("Reading filename=$filename")
+        var linesList = File(filename).readLines()
+
+        // Remove first line, which contains the file name.
+        linesList = linesList.drop(1)
+
+        // Remove user name.
+        val userName = "Pinky"
+        linesList = linesList.filterNot { it == userName }
+
+        // Remove empty lines.
+        linesList = linesList.filterNot { it.isEmpty() }
 
 //    dumpFileLines(linesList)
 
-    // Collect a day's measurement into array.
-    val multiDayData = collectMeasurementsByDays(linesList)
-    writeDataToFile(multiDayData)
+        // Collect a day's measurement into array.
+        val multiDayData = collectMeasurementsByDays(linesList)
+        writeDataToFile(multiDayData, fileWriter)
 //    println("Multi-Day Data=$multiDayData")
+    }
+    fileWriter.close()
 
+    println("No more input data files. Ending program.")
+    return
+}
 
+/**
+ * Get next month data file within the range Scale201801.txt through Scale202012.txt.
+ * @param dateLast Date of last processed data file.
+ *                 -1, if initial range.
+ * @return Date of data file in range. Format = YYYYMM.
+ *         0, if exceeded end range.
+ */
+private fun nextDataFile(dateLast: Int): Int {
+    return when (dateLast) {
+        -1 -> DATE_START                             // Start range.
+        in DATE_START .. DATE_END -> dateLast + 1   // Within range.
+        else -> 0                            // Exceeded range.
+    }
 }
 
 /**
@@ -63,7 +97,7 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
 
         if (i in 0..SIZE_OLD_DATA_MEASUREMENTS) {
             // Current day's data. Keep collecting into same array index.
-            println("\ti=$i, m=$m")
+            println("\ti=$i, m=$m")                                         // String templates.
             when (i) {
                 IDX_TIMESTAMP -> timestamp = m
                 IDX_WEIGHT -> weight = m
@@ -88,16 +122,15 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
     return list
 }
 
-fun writeDataToFile(dataForFile: List<DayData>) {
-    val f = FileWriter("datafile.csv")
-//    val f = File("datafile.csv")
+/**
+ * Write formatted data to file.
+ * @param dataForFile
+ */
+fun writeDataToFile(dataForFile: List<DayData>, aFileWriter: FileWriter) {
     dataForFile.forEach {
         val s = it.toCsv()
-        f.write(it.toCsv())
-  //      f.writeText(it.toCsv())
+        aFileWriter.write(it.toCsv())
     }
-    f.close()
-    // TODO: Write formatted data to file.
 }
 
 fun dumpFileLines(aLinesList: List<String>) {
