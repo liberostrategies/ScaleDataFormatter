@@ -1,4 +1,5 @@
 import java.io.File
+import java.io.FileWriter
 
 const val SIZE_OLD_DATA_MEASUREMENTS = 9
 const val IDX_TIMESTAMP = 0
@@ -31,7 +32,8 @@ fun main(args: Array<String>) {
 
     // Collect a day's measurement into array.
     val multiDayData = collectMeasurementsByDays(linesList)
-    println("Multi-Day Data=$multiDayData")
+    writeDataToFile(multiDayData)
+//    println("Multi-Day Data=$multiDayData")
 
 
 }
@@ -59,7 +61,6 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
     for ((line, m) in theMeasurements.withIndex()) {
         println("$line:($i)\t$m")
 
-//        if (i < SIZE_OLD_DATA_MEASUREMENTS) {
         if (i in 0..SIZE_OLD_DATA_MEASUREMENTS) {
             // Current day's data. Keep collecting into same array index.
             println("\ti=$i, m=$m")
@@ -87,9 +88,18 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
     return list
 }
 
-fun formatTimestamp() {
-
+fun writeDataToFile(dataForFile: List<DayData>) {
+    val f = FileWriter("datafile.csv")
+//    val f = File("datafile.csv")
+    dataForFile.forEach {
+        val s = it.toCsv()
+        f.write(it.toCsv())
+  //      f.writeText(it.toCsv())
+    }
+    f.close()
+    // TODO: Write formatted data to file.
 }
+
 fun dumpFileLines(aLinesList: List<String>) {
     aLinesList.forEachIndexed { index, s ->
         println("line=$index : $s")
