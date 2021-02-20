@@ -3,7 +3,7 @@ import java.io.FileWriter
 
 const val OUTFILE_DATA_FILENAME = "datafile.csv"
 const val DATE_START = 201801
-const val DATE_END = 201802 // Inclusive. //202012
+const val DATE_END = 202012 // Inclusive.
 
 const val SIZE_OLD_DATA_MEASUREMENTS = 9
 const val IDX_TIMESTAMP = 0
@@ -17,11 +17,14 @@ const val IDX_BMR = 7
 const val IDX_MUSCLE_MASS = 8
 
 fun main(args: Array<String>) {
-
-    // Read input data files from Scale201801.txt through Scale202012.txt.
     var dateCurr = -1
-    var filename = "data/ScaleTBD.txt"  //"data/Scale201801.txt"
-//    println("Reading file $file")
+    var filename = "data/ScaleTBD.txt"
+
+    // Delete any previous output files as a result of running this program.
+    val fileCheck = File(OUTFILE_DATA_FILENAME)
+    if (fileCheck.exists()) {
+        fileCheck.delete()
+    }
 
     var fileWriter = FileWriter(OUTFILE_DATA_FILENAME)
     fileWriter.write(DayData.headerToCsv())
@@ -32,24 +35,34 @@ fun main(args: Array<String>) {
         filename = "data/Scale$dateCurr.txt"
 
         println("Reading filename=$filename")
-        var linesList = File(filename).readLines()
+        // Check that input data files exists, before reading it.
+//        var linesList = File(filename).readLines()
+        val f = File(filename)
+        if (f.exists()) {
+            f.readLines()
+            var linesList = File(filename).readLines()
 
-        // Remove first line, which contains the file name.
-        linesList = linesList.drop(1)
+            // Remove first line, which contains the file name.
+            linesList = linesList.drop(1)
 
-        // Remove user name.
-        val userName = "Pinky"
-        linesList = linesList.filterNot { it == userName }
+            // Remove user name.
+            val userName = "Pinky"
+            linesList = linesList.filterNot { it == userName }
 
-        // Remove empty lines.
-        linesList = linesList.filterNot { it.isEmpty() }
+            // Remove empty lines.
+            linesList = linesList.filterNot { it.isEmpty() }
 
-//    dumpFileLines(linesList)
+    //    dumpFileLines(linesList)
 
-        // Collect a day's measurement into array.
-        val multiDayData = collectMeasurementsByDays(linesList)
-        writeDataToFile(multiDayData, fileWriter)
-//    println("Multi-Day Data=$multiDayData")
+            // Collect a day's measurement into array.
+            val multiDayData = collectMeasurementsByDays(linesList)
+            writeDataToFile(multiDayData, fileWriter)
+    //    println("Multi-Day Data=$multiDayData")
+        } // Input data file exists, so process it.
+        else {
+            println("$filename does not exist. Skipping it.")
+        }
+
     }
     fileWriter.close()
 
@@ -65,9 +78,19 @@ fun main(args: Array<String>) {
  *         0, if exceeded end range.
  */
 private fun nextDataFile(dateLast: Int): Int {
+    val monthLast = if (dateLast > -1) dateLast.toString().substring(4).toInt() else -1
+    val yearLast = if (dateLast > -1) dateLast.toString().substring(0, 4).toInt() else -1
+
     return when (dateLast) {
         -1 -> DATE_START                             // Start range.
-        in DATE_START .. DATE_END -> dateLast + 1   // Within range.
+        in DATE_START .. DATE_END -> {
+            if (monthLast == 12) {
+                // Reset to next year and Jan (1).
+                ((yearLast + 1) * 100) + 1
+            } else {
+                dateLast + 1
+            }
+        }   // Within range.
         else -> 0                            // Exceeded range.
     }
 }

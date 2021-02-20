@@ -44,9 +44,15 @@ class DayData (
     }
 
     fun toCsv() = "$timeStamp\"," + // TODO: Match Arboleaf format = "Feb 9, 2021 05:56:21"
-            "$weight,$bodyWater,$bodyFat,$bone,$bmi," +
+            "$weight," +
+            "$bmi," +
+            "$bodyFat," +
             "Fit," + // Manually add Body Type to match Arboleaf data.
-            "$visceralFat,$bmr,$muscleMass\n"
+            "$visceralFat," +
+            "$bodyWater," +
+            "$muscleMass," +
+            "$bone," +
+            "$bmr\n"
 
     // Format each measurement.
     /**
@@ -69,6 +75,7 @@ class DayData (
         // arrTs[1] = 07
         // arrTs[2] = 42, Tues,1/ 9/2018
         // Separate minutes from date in arrTs[2].
+        println("${arrTs[0]}, ${arrTs[1]}, ${arrTs[2]}")
         val date = arrTs[2].split(',')[2]
         val minutes = arrTs[2].split(',')[0]
         timeStamp = "\"$date ${arrTs[0]}:${arrTs[1]}:${minutes}"
