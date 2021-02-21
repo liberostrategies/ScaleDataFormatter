@@ -18,7 +18,7 @@ const val IDX_MUSCLE_MASS = 8
 
 fun main(args: Array<String>) {
     var dateCurr = -1
-    var filename = "data/ScaleTBD.txt"
+    var filename: String
 
     // Delete any previous output files as a result of running this program.
     val fileCheck = File(OUTFILE_DATA_FILENAME)
@@ -27,8 +27,8 @@ fun main(args: Array<String>) {
     }
 
     // Add the header row.
-    var fileWriter = FileWriter(OUTFILE_DATA_FILENAME)
-    fileWriter.write(DayData.Companion.headerToCsv())
+    val fileWriter = FileWriter(OUTFILE_DATA_FILENAME)
+    fileWriter.write(DayData.headerToCsv())
 
     // Keep reading input data files within the date range.
     while ((dateCurr != 0) && (dateCurr < DATE_END)) {
@@ -98,7 +98,7 @@ private fun nextDataFile(dateLast: Int): Int {
  * @return Array of array data for each day from the multi-day data file.
  */
 fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
-    var list: MutableList<DayData> = mutableListOf<DayData>()
+    val list: MutableList<DayData> = mutableListOf()
 
     var timestamp = "TBDtimeStamp"
     var weight = "TBDweight"
@@ -111,7 +111,7 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
     var muscleMass = "TBDmuscleMass"
 
     var i = 0
-    for ((line, m) in theMeasurements.withIndex()) {
+    for ((line, m) in theMeasurements.withIndex()) { // The "line" index is for debug only.
 //        println("$line:($i)\t$m")
 
         if (i in 0..SIZE_OLD_DATA_MEASUREMENTS) {
@@ -147,7 +147,6 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
  */
 fun writeDataToFile(dataForFile: List<DayData>, aFileWriter: FileWriter) {
     dataForFile.forEach {
-        val s = it.toCsv()
         aFileWriter.write(it.toCsv())
     }
 }
