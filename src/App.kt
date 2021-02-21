@@ -26,17 +26,17 @@ fun main(args: Array<String>) {
         fileCheck.delete()
     }
 
+    // Add the header row.
     var fileWriter = FileWriter(OUTFILE_DATA_FILENAME)
-    fileWriter.write(DayData.headerToCsv())
+    fileWriter.write(DayData.Companion.headerToCsv())
 
+    // Keep reading input data files within the date range.
     while ((dateCurr != 0) && (dateCurr < DATE_END)) {
-        // Keep reading input data files.
         dateCurr = nextDataFile(dateCurr)
         filename = "data/Scale$dateCurr.txt"
 
         println("Reading filename=$filename")
         // Check that input data files exists, before reading it.
-//        var linesList = File(filename).readLines()
         val f = File(filename)
         if (f.exists()) {
             f.readLines()
@@ -52,17 +52,13 @@ fun main(args: Array<String>) {
             // Remove empty lines.
             linesList = linesList.filterNot { it.isEmpty() }
 
-    //    dumpFileLines(linesList)
-
             // Collect a day's measurement into array.
             val multiDayData = collectMeasurementsByDays(linesList)
             writeDataToFile(multiDayData, fileWriter)
-    //    println("Multi-Day Data=$multiDayData")
         } // Input data file exists, so process it.
         else {
             println("$filename does not exist. Skipping it.")
         }
-
     }
     fileWriter.close()
 
@@ -82,16 +78,16 @@ private fun nextDataFile(dateLast: Int): Int {
     val yearLast = if (dateLast > -1) dateLast.toString().substring(0, 4).toInt() else -1
 
     return when (dateLast) {
-        -1 -> DATE_START                             // Start range.
-        in DATE_START .. DATE_END -> {
+        -1 -> DATE_START                            // Start range.
+        in DATE_START .. DATE_END -> {              // Within range.
             if (monthLast == 12) {
                 // Reset to next year and Jan (1).
                 ((yearLast + 1) * 100) + 1
             } else {
                 dateLast + 1
             }
-        }   // Within range.
-        else -> 0                            // Exceeded range.
+        }
+        else -> 0                                   // Exceeded range.
     }
 }
 
@@ -116,11 +112,11 @@ fun collectMeasurementsByDays(theMeasurements: List<String>): List<DayData> {
 
     var i = 0
     for ((line, m) in theMeasurements.withIndex()) {
-        println("$line:($i)\t$m")
+//        println("$line:($i)\t$m")
 
         if (i in 0..SIZE_OLD_DATA_MEASUREMENTS) {
             // Current day's data. Keep collecting into same array index.
-            println("\ti=$i, m=$m")                                         // String templates.
+//            println("\ti=$i, m=$m")                                         // String templates.
             when (i) {
                 IDX_TIMESTAMP -> timestamp = m
                 IDX_WEIGHT -> weight = m
@@ -156,6 +152,10 @@ fun writeDataToFile(dataForFile: List<DayData>, aFileWriter: FileWriter) {
     }
 }
 
+/**
+ * For debug of file.
+ * @param aLinesList Lines of file.
+ */
 fun dumpFileLines(aLinesList: List<String>) {
     aLinesList.forEachIndexed { index, s ->
         println("line=$index : $s")
